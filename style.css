@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* tránh trường hợp khai bái paddng >100% */
+}
+h2,h3{
+    color: #f57421;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    color:#636363;
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: url(https://www.disneycooking.com/wp-content/uploads/2019/11/food-background-1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.container{
+    background-color: white;
+    padding: 0;
+}
+.container-content{
+    margin: 0 100px;
+}
+/* HEADER  */
+header{
+    margin-top: 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    height: 88px;
+}
+header img{
+    font-size: 26px;
+    width: 210px;
+    padding-bottom: 0;
+    height: auto;
+}
+/* nav ul{
+    display: flex;
+    align-items: center;
+} */
+header ul {
+    display: flex;
+    margin-right: 30px;
+    height: auto;
+}
+header li {
+    padding: 55px 15px;
+    list-style: none;
+    transform: translateY();
+}
+header li a {
+    color: #070120;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+header li a:hover{
+    color: #35a533;
+    from{
+            transform: translateY(0);
+    }
+        to{
+            transform: translateY(30px);
+                    }
+}
+
+  a span {
+      display: inline-block;
+    transition: all 1s;
+  }
+  a:hover {
+    color: #f55f8d;
+  }
+  a:hover span {
+    animation: upToDown 1s;
+  }
+  
+  @keyframes upToDown {
+    49% {
+      transform: translateY(100%);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    51% {
+      opacity: 1;
+    }
+  }
+
+
+  /* INFORMATION */
+  .img_info {
+    text-align: center;
+  }
+  /* PRODUCT  */
+  .item{
+    width: 224.5px;
+    height: 149.66px;
+  }
+  /* .item_content{
+    padding: 30px;
+  } */
+  .item_content img{
+    width: 100%;
+    height: auto;
+  }
+  .item_content a{
+    text-align: center;
+    color: #070120;
+  }
+  .row{
+    display: flex;
+   justify-content: space-evenly;
+   margin-bottom: 80px;
+  }
+  /* CONTENT */
+  .img-content{
+    text-align: center;
+  }
+  .content_img{
+    display: flex;
+    justify-content: space-around;
+  }
+  .content_img img {
+    width: 302.66px;
+    height: 201.78px;
+  }
+  .content .chuong-trinh-hoc ul{
+    margin: 0 30px;
+  }
+  table {
+    width: 100%;
+    max-width: 100%;
+    background-color:transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td {
+    background: #fff;
+    padding: 4px 7px;
+    border: 1px solid #e1e1e1;
+}
+  /* FOOTER  */
+  footer{
+    background-image: url(https://www.disneycooking.com/wp-content/uploads/2019/05/bg-dvp.jpg);
+    display: flex;
+    color: white;
+  }
+  .col{
+    padding-top: 10px;
+  }
+  footer hr{
+    background-color: green;
+
+  }
+  footer ul{
+    list-style: none;
+  }
