@@ -6,6 +6,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,27 +26,47 @@
                 <a href="#">
                     <img src="./img/logo_disneycooking.png" alt="">
                 </a>
-                <nav>
-
-                    <ul>
-                        <li>
-                            <a href="./phaChe.html">Học Pha Chế</a>
-                        </li>
-                        <li>
-                            <a href="./nauXoi.html">Học Nấu Xôi</a>
-                        </li>
-                        <li>
-                            <a href="./nauChe.html">Học Nấu Chè</a>
-                        </li>
-                        <li>
-                            <a href="#">Món Ngon Mỗi Ngày</a>
-                        </li>
-
-                    </ul>
-                </nav>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fa-solid fa-bars dropbtn"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./phaChe.html">Học Pha Chế</a>
+                        <a href="./nauXoi.html">Học Nấu Xôi</a>
+                        <a href="./nauChe.html">Học Nấu Chè</a>
+                        <a href="#">Món Ngon Mỗi Ngày</a>
+                    </div>
+                  </div>
+                <!-- <nav>
+                    <i class="fa-solid fa-bars">
+                        <ul>
+                            <li>
+                                <a href="./phaChe.html">Học Pha Chế</a>
+                            </li>
+                            <li>
+                                <a href="./nauXoi.html">Học Nấu Xôi</a>
+                            </li>
+                            <li>
+                                <a href="./nauChe.html">Học Nấu Chè</a>
+                            </li>
+                            <li>
+                                <a href="#">Món Ngon Mỗi Ngày</a>
+                            </li>
+    
+                        </ul>
+                    </i>
+                    
+                </nav> -->
 
 
             </header>
+
+            <div class="left">
+                <video controls>
+                    <source src="./img/intro food.mp4">
+                </video>
+
+            </div>
             <!-- INFORMATION  -->
             <div class="information">
                 <h3>365 MÓN NGON MỖI NGÀY CHO GIA ĐÌNH ĐƠN GIẢN DỄ LÀM</h3>
@@ -174,26 +198,21 @@
             </div>
             <!-- SIGN UP  -->
         <div class="dangKy">
-            <div class="left">
-                <video controls>
-                    <source src="./img/intro food.mp4">
-                </video>
-
-            </div>
-            <div class="right">
+            
+            
                 <div class="to">
                     <div class="form">
                         <h2>Đăng ký học</h2>
-                        <label style="margin-left: -150px;">Họ và tên</label>
-                        <input type="text" name="hoten">
-                        <label>Số điện thoại</label>
-                        <input type="text" name="sdt">	
-                        <label style="margin-left: -180px;">Email</label>
-                        <input type="text" name="email"> 
+                        
+                        <input type="text" name="hoten" placeholder="Họ và tê">
+                      
+                        <input type="text" name="sdt" placeholder="Số điện thoại">	
+                        
+                        <input type="text" name="email" placeholder=" Email"> 
                         <input id="submit" type="submit" name="submit" value="Gửi">
                     </div>				
                 </div>
-            </div>
+            
         </div>
 
         </div>

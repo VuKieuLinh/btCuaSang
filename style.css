@@ -41,11 +41,55 @@ header img{
     padding-bottom: 0;
     height: auto;
 }
+.left{
+  text-align: center;
+}
 /* nav ul{
     display: flex;
     align-items: center;
 } */
-header ul {
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+/* header ul {
     display: flex;
     margin-right: 30px;
     height: auto;
@@ -95,7 +139,7 @@ header li a:hover{
     51% {
       opacity: 1;
     }
-  }
+  } */
 
 
   /* INFORMATION */
@@ -151,17 +195,14 @@ td {
     border: 1px solid #e1e1e1;
 }
 /* SIGN UP  */
-.dangKy{
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .form {
   border: 1px solid #80808000;
-  grid-column: 6/9;
-  grid-row: 3;
-  height: 470px;
-  width: 292px;
+  /* grid-column: 6/9;
+  grid-row: 3; */
+  height: 370px;
+  /* width: 292px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,12 +221,7 @@ i.fab.fa-app-store-ios {
   font-size: 28px;
 }
 
-label {
-  margin-left: -126px;
-  display: block;
-  font-weight: lighter;
 
-}
 input{
   display: block;
   border-bottom: 2px solid #00BCD4;
